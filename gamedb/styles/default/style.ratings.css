@@ -1,0 +1,66 @@
+.rating-segment-1, .rating-segment-2, .rating-segment-3 {
+    position: relative;
+   position: relative;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        rgba(255, 25, 25, 1) 0% calc(var(--rating, 0) * 10%),
+        rgba(75, 0, 0, 1) calc(var(--rating, 0) * 10%) 100%
+    );
+   
+}
+
+.rating-segment-4, .rating-segment-5, .rating-segment-6 {
+    position: relative;
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        rgba(255, 255, 0, 1) 0% calc(var(--rating, 0) * 10%),
+        rgba(75, 75, 0, 1) calc(var(--rating, 0) * 10%) 100%
+    );
+   
+}
+
+.rating-segment-7, .rating-segment-8, .rating-segment-9, .rating-segment-10 {
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        rgba(0, 255, 25, 1) 0% calc(var(--rating, 0) * 10%),
+        rgba(0, 75, 0, 1) calc(var(--rating, 0) * 10%) 100%
+    );
+   
+}
+
+.rating-segment-1::before, .rating-segment-2::before, .rating-segment-3::before, .rating-segment-4::before, .rating-segment-5::before, .rating-segment-6::before, .rating-segment-7::before, .rating-segment-8::before, .rating-segment-9::before, .rating-segment-10::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #333;
+    z-index: 1;
+}
+
+.rating-text {
+	font-family: Bahnschrift;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    z-index: 2;
+}

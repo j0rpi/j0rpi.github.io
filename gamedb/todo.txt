@@ -1,0 +1,21 @@
+todo, ideas or whatever.. 
+
+
+[todos]
+
+# appereance 
+X make css external, and tied to skins
+
+
+# administrative
+X make a nicer admin panel
+X ability to modify config from admin panel
+X ability to change admin password
+- parse styles folder and populate box and make it configurable
+
+# games 
+- integrate splits.io and speedrun.com page urls for games
+
+# other
+- integrating splits.io data
+- integrating speedrun of selected game where its specified

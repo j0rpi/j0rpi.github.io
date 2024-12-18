@@ -1,0 +1,203 @@
+v0.4 - 2024-12-17
+_________________________________________
+
+[Changes]
+- Re-designed rating icons.
+- When hovering platform icon, it will now display it's name instead of its short prefix
+
+Todo: Replace short_prefix with name in modal and title
+
+
+v0.31 - 2024-12-04
+_________________________________________
+
+[Changes]
+- Rating system is now based on CSS and JS. Default skin will utilize this
+- styles/default/styles.ratings.css added - This file holds CSS rules for the rating circle
+- Modified /admin/coversearch.php slightly to accept IGDB ClientID and AccessToken from database instead of being hardcoded.
+
+
+v0.3 - 2024-12-04
+_________________________________________
+
+[Changes]
+- Generated IGDB access token will automaticly populate input field in install script
+
+
+v0.27 - 2024-09-02
+_________________________________________
+
+[Additions]
+- Swedish language file complete (for now)
+- Added language selection to install script
+- Added language selection to config page
+
+[Changes]
+- Made most pages fetch config variables from database
+- Redesigned /admin/nuke.php and also added the possibility of choosing what to wipe
+
+[Fixes]
+- Password fields in /admin/password.php autocompleting old passwords
+- Fixed a typo in SQL query in wipeGames()
+- Fixed footer in /admin/nuke.php
+
+
+v0.26 - 2024-08-26
+_________________________________________
+
+[Changes]
+- CSS are now completely external and tied to each style.
+
+
+v0.25 - 2024-08-26
+_________________________________________
+
+[Changes]
+- Install script has been made to be configurable.
+  Also fixed install script not creating 'configuration' table.
+
+
+v0.24 - 2024-08-23
+_________________________________________
+
+[Additions]
+- Made SQL more secure against various attacks on all pages using SQL.
+
+[Administrative]
+- User can now change password.
+
+
+v0.23 - 2024-08-15
+_________________________________________
+
+[Changes]
+- Making code alot nicer and easier to read and use so 
+  most functions will move into /include/functions.php 
+  rather than having bare code being used making it look
+  a little bit amateurish
+
+
+v0.22 - 2024-08-15
+_________________________________________
+
+[Additions]
+- Added footer for pages where it was missing
+- Made GameDB text in footer re-direct to Github page.
+
+[Fixes]
+- Fixed width on text input fields in info-container in categories.php/platforms.php
+- Fixed header texts in info-container being slightly lower than form-container navigation text.
+- Fixed version.php not being called from multiple pages, causing variable errors.
+- Fixed buttons in info-container being green instead of blue
+
+[Administrative]
+- Added nuke.php and implemented the possibility of wiping the database
+
+
+v0.21 - 2024-08-14
+_________________________________________
+
+[Changes]
+- No more seperate pages for adding categories and platforms.
+  These have now moved to the information container.
+
+[Fixes]
+- Fixed navigation row on categories/platforms pages being pushed down slightly.
+
+[Administrative]
+- Added PHP Info under Administrative section
+- Prepared links for:
+  * GameDB Updates
+  * Import/Export/Backup Database
+  * Nuke Database
+
+Note: These pages are not done yet, but have been added to
+      administrative page.
+  
+
+v0.20 - 2024-08-05
+_________________________________________
+
+[Changes]
+- Admin dashboard has been redesigned
+- Version number has been made a variable instead, located in version.php
+- Configuration is now stored in database. /include/config.php and its
+  usage will soon be phased out as i work on the code. 
+  
+[Administrative]
+- Added info box to the right of the main list for categories and platforms.
+
+
+v0.19 - 2024-07-26
+_________________________________________
+
+[Additions]
+- Categories/Platform pages added to admin dashboard
+
+[Administrative]
+- Added info messages when modifying/adding/deleting games/genres/platforms
+
+Note: This page will also display platform icon (if available)
+that matches each platforms short prefix as mentioned in earlier
+changelog update.
+
+
+v0.18 - 2024-07-25
+_________________________________________
+
+[Changes]
+- Platform/systems are now stored in database in the 'platforms' table
+- Genres are now stored in database in the 'categories' table
+
+Note: Platform icons should be named the same as the 'short_prefix' in the database table.
+
+Example:
+Name			: 	Atari 2600 
+Short Prefix	:	Atari2600 
+Platform Icon	:	<skin-name>/img/platform_icons/Atari2600.png
+
+
+v0.17 - 2024-07-24
+_________________________________________
+
+[Additions]
+- Added platform icon support
+
+[Fixes]
+- Fixed VOD column showing full link instead of "WATCH"
+- Fixed table and its content not being aligned when using filters
+- Fixed table not showing rating icons, also added platform icon on search query
+
+[Administrative]
+- Added platform support
+
+
+v0.16a - 2024-07-19
+_________________________________________
+
+[Additions]
+- Replaced text with rating stars
+- Added Rating filter
+
+[Fixes]
+- Fixed blurry text caused by backdrop filters
+
+[Administrative]
+- Added warning bar in admin page about the install folder
+
+
+v0.15 - 2024-07-04
+_________________________________________
+
+[Additions]
+- Resized container 
+	
+[Fixes]
+- Fixed blurry HTML elements (input, select)
+
+
+version v0.14 - 2024-07-03
+_________________________________________
+
+[Additions]
+- Added IGDB integration. See admin page config info.
